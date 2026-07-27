@@ -1,0 +1,57 @@
+{
+  "_note": "Salin file ini menjadi data.json dan isi dengan data Anda. File data.json di-gitignore sehingga tidak ikut ke repositori.",
+  "name": "Nama Lengkap",
+  "headline": "Web & Mobile Developer",
+  "location": "Jakarta, Indonesia",
+  "about": "Isi bio singkat di sini. Ceritakan apa yang kamu kerjakan sehari-hari.",
+  "website": "https://username.github.io",
+  "email": "nama@domain.com",
+  "phone": "+62 xxx-xxxx-xxxx",
+  "social": {
+    "linkedin": "https://www.linkedin.com/in/username/",
+    "github": "https://github.com/username",
+    "twitter": "",
+    "instagram": ""
+  },
+  "skills": [
+    "HTML / CSS",
+    "JavaScript",
+    "PHP",
+    "Laravel",
+    "Flutter",
+    "MySQL",
+    "Git",
+    "REST API"
+  ],
+  "projects": [
+    {
+      "name": "Nama Proyek Web",
+      "description": "Deskripsi singkat mengenai fitur dan tujuan proyek ini.",
+      "tags": ["Laravel", "MySQL", "TailwindCSS"],
+      "url": "https://example.com",
+      "github": "https://github.com/username/repo"
+    },
+    {
+      "name": "Aplikasi Mobile",
+      "description": "Aplikasi berbasis Flutter untuk manajemen tugas harian.",
+      "tags": ["Flutter", "Dart", "REST API"],
+      "url": "",
+      "github": "https://github.com/username/mobile-repo"
+    }
+  ],
+  "experience": [
+    {
+      "title": "Job Title",
+      "company": "Nama Perusahaan",
+      "period": "Jan 2023 - Sekarang",
+      "description": "Deskripsi singkat pekerjaan."
+    }
+  ],
+  "education": [
+    {
+      "school": "Nama Universitas",
+      "degree": "S1 Teknik Informatika",
+      "year": "2018 - 2022"
+    }
+  ]
+}

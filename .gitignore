@@ -1,0 +1,11 @@
+# Data pribadi — jangan pernah di-commit
+data.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+*.swp
+*.swo

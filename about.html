@@ -2,44 +2,130 @@
 <html lang="id">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Tentang</title>
-    <link href='css/master.css' rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tentang - EXsipo.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Tentang - EXsipo">
+  <meta property="og:description" content="Profil profesional dan keahlian.">
+  <meta property="og:type" content="website">
+
+  <title>Tentang - EXsipo</title>
+  <link href="css/master.css" rel="stylesheet">
 </head>
 
 <body>
-    <div class="container">
-        <div class="main-box white">
-            <div class="grid-container">
-                <div class="item-content">
-                    <div class="center-text">
-                        <div class="profile">
-                            <img src="img/my-photo.jpg" alt="Avatar">
-                        </div>
-                        <h1>Ahmad Romadhon</h1>
-                        <p style="font-style: oblique;">Programmer Website & Mobile</p>
-                        <p style="margin-top:10px;font-weight: bold;">Jakarta, Indonesia</p>
-                        <p style="margin-top:10px;">Holisticly administrate intermandated manufactured products through
-                            B2B process improvements.
-                            Dynamically synthesize customer directed action items after professional solutions.
-                            Monotonectally whiteboard alternative communities vis-a-vis sustainable.</p>
-                    </div>
-                </div>
-                <div class="item-menu">
-                    <div class="vertical-menu">
-                        <a href="index.html">Beranda</a>
-                        <a href="about.html" class="active">Tentang</a>
-                        <a href="contact.html">Kontak</a>
-                    </div>
-                </div>
+
+  <div class="shell">
+    <!-- Brand Bar -->
+    <header class="brand-bar">
+      <a href="index.html" class="brand-logo">
+        <span class="ex-mark">EX</span>
+        <span class="brand-name">treme Simple Portfolio</span>
+      </a>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Buka Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </header>
+
+    <!-- Mobile Nav -->
+    <div class="mobile-nav-overlay" id="mobileNav">
+      <button class="mobile-nav-close" id="mobileNavClose" aria-label="Tutup Menu">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+    </button>
+      <nav class="vertical-menu">
+        <a href="index.html">Beranda</a>
+        <a href="projects.html">Proyek</a>
+        <a href="about.html" class="active">Tentang</a>
+        <a href="contact.html">Kontak</a>
+      </nav>
+    </div>
+
+    <!-- Main Grid -->
+    <main class="main-grid">
+      <aside class="sidebar">
+        <p class="nav-label">Menu</p>
+        <nav class="vertical-menu">
+          <a href="index.html">Beranda</a>
+          <a href="projects.html">Proyek</a>
+          <a href="about.html" class="active">Tentang</a>
+          <a href="contact.html">Kontak</a>
+        </nav>
+      </aside>
+
+      <section class="content-area">
+        <p class="page-tag">Tentang</p>
+
+        <div class="about-layout">
+          <!-- Profile column -->
+          <div class="profile-column">
+            <div class="profile">
+              <img src="img/my-photo.jpg" alt="Foto profil">
             </div>
+            <div class="profile-name" data-field="name">Nama Anda</div>
+            <div class="profile-role" data-field="headline">Web &amp; Mobile Developer</div>
+            <div class="profile-location">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="opacity:0.7;"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span data-field="location">Jakarta, Indonesia</span>
+            </div>
+            <button class="btn btn-ghost print-btn" id="printCvBtn" style="margin-top: 8px; width: 100%; justify-content: center;">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+              Cetak CV
+            </button>
+          </div>
+
+          <!-- Info column -->
+          <div class="info-column">
+            <h1 class="section-title" data-field="name">Nama Anda</h1>
+            <!-- TODO: isi bio kamu di data.json -->
+            <p class="bio-text" data-field="about">
+              Developer web dan mobile berbasis di Jakarta.
+              Sehari-hari pakai PHP, Laravel, Flutter, dan JavaScript.
+              Senang kalau bisa bikin sistem yang kerjanya jelas
+              dan kodenya tidak bikin programmer berikutnya kena pusing.
+            </p>
+
+            <div class="nav-divider" style="margin: 0 0 16px 0;"></div>
+
+            <p class="skills-section-label">Keahlian</p>
+            <div class="skills-grid" id="skills-grid">
+              <!-- Diisi oleh JS dari data.json -->
+              <span class="skill-tag">HTML / CSS</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">PHP</span>
+              <span class="skill-tag">Laravel</span>
+              <span class="skill-tag">Flutter</span>
+              <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">REST API</span>
+            </div>
+
+            <!-- Experience - tersembunyi jika kosong di data.json -->
+            <div id="experience-section" hidden>
+              <div class="nav-divider" style="margin: 20px 0 16px 0;"></div>
+              <p class="skills-section-label">Pengalaman</p>
+              <div id="experience-list"></div>
+            </div>
+
+            <!-- Education - tersembunyi jika kosong di data.json -->
+            <div id="education-section" hidden>
+              <div class="nav-divider" style="margin: 20px 0 16px 0;"></div>
+              <p class="skills-section-label">Pendidikan</p>
+              <div id="education-list"></div>
+            </div>
+          </div>
         </div>
-    </div>
-    <div class="footer">
-        Copyright 2019 © Romadhon-Byar
-    </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      &copy; <span data-field="name">Nama Anda</span>
+    </footer>
+  </div>
+
+  <script src="js/master.js"></script>
 </body>
 
 </html>

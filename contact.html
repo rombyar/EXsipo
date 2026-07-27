@@ -2,49 +2,138 @@
 <html lang="id">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Kontak</title>
-    <link href='css/master.css' rel="stylesheet">
-    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css' rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kontak - EXsipo.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Kontak - EXsipo">
+  <meta property="og:description" content="Hubungi saya via email, situs, atau media sosial.">
+  <meta property="og:type" content="website">
+
+  <title>Kontak - EXsipo</title>
+  <link href="css/master.css" rel="stylesheet">
 </head>
 
 <body>
-    <div class="container">
-        <div class="main-box white">
-            <div class="grid-container">
-                <div class="item-content">
-                    <div class="center-text">
-                        <h3>Hubungi Saya</h3>
-                        <p>Intrinsicly plagiarize one-to-one bandwidth without sticky "outside the box" thinking.
-                            Uniquely brand process-centric growth strategies via emerging convergence. Assertively
-                            envisioneer exceptional materials for alternative.</p>
-                        <div style="margin-top: 20px;">
-                            <p><b>Nomor</b> : +62890000<b>666</b>0</p>
-                            <p><b>Surel</b> : aaa@yyy.com</p>
-                            <p><b>Situs</b> : <a href="https://romadhonbyar.github.io">romadhonbyar.github.io</a></p>
-                        </div>
-                        <div class="sos-menu">
-                            <a href="#facebook"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
-                            <a href="#twitter"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
-                            <a href="#github"><i class="fa fa-github-square fa-2x" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="item-menu">
-                    <div class="vertical-menu">
-                        <a href="index.html">Beranda</a>
-                        <a href="about.html">Tentang</a>
-                        <a href="contact.html" class="active">Kontak</a>
-                    </div>
-                </div>
-            </div>
+
+  <div class="shell">
+    <!-- Brand Bar -->
+    <header class="brand-bar">
+      <a href="index.html" class="brand-logo">
+        <span class="ex-mark">EX</span>
+        <span class="brand-name">treme Simple Portfolio</span>
+      </a>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Buka Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </header>
+
+    <!-- Mobile Nav -->
+    <div class="mobile-nav-overlay" id="mobileNav">
+      <button class="mobile-nav-close" id="mobileNavClose" aria-label="Tutup Menu">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M18 6 6 18" />
+          <path d="m6 6 12 12" />
+        </svg>
+      </button>
+      <nav class="vertical-menu">
+        <a href="index.html">Beranda</a>
+        <a href="projects.html">Proyek</a>
+        <a href="about.html">Tentang</a>
+        <a href="contact.html" class="active">Kontak</a>
+      </nav>
+    </div>
+
+    <!-- Main Grid -->
+    <main class="main-grid">
+      <aside class="sidebar">
+        <p class="nav-label">Menu</p>
+        <nav class="vertical-menu">
+          <a href="index.html">Beranda</a>
+          <a href="projects.html">Proyek</a>
+          <a href="about.html">Tentang</a>
+          <a href="contact.html" class="active">Kontak</a>
+        </nav>
+      </aside>
+
+      <section class="content-area">
+        <p class="page-tag">Kontak</p>
+
+        <div class="contact-header">
+          <h1>Kontak</h1>
+          <!-- TODO: tulis keterangan singkat kamu di data.json > about, atau biarkan kosong -->
         </div>
-    </div>
-    <div class="footer">
-        Copyright 2019 © Romadhon-Byar
-    </div>
+
+        <!-- Contact Cards - card tersembunyi jika field kosong di data.json -->
+        <div class="contact-cards">
+          <div class="contact-card" data-contact-card="phone">
+            <div class="card-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+              </svg></div>
+            <div class="card-label">Nomor</div>
+            <!-- TODO: isi phone di data.json -->
+            <div class="card-value" data-field="phone">+62 xxx-xxxx-xxxx</div>
+          </div>
+
+          <div class="contact-card" data-contact-card="email">
+            <div class="card-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="20" height="16" x="2" y="4" rx="2" />
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+              </svg></div>
+            <div class="card-label">Surel</div>
+            <!-- TODO: isi email di data.json -->
+            <div class="card-value" data-field="email">nama@domain.com</div>
+          </div>
+
+          <div class="contact-card" data-contact-card="website">
+            <div class="card-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+                <path d="M2 12h20" />
+              </svg></div>
+            <div class="card-label">Situs</div>
+            <div class="card-value">
+              <a data-href="website" data-field="website" href="#" target="_blank"
+                rel="noopener">
+                username.github.io
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Social links - hanya tampil jika ada URL di data.json -->
+        <p class="social-title">Media Sosial</p>
+        <div class="social-row">
+          <a href="#" class="social-link" data-social="linkedin" hidden>
+            LinkedIn
+          </a>
+          <a href="#" class="social-link" data-social="github" hidden>
+            GitHub
+          </a>
+          <a href="#" class="social-link" data-social="twitter" hidden>
+            Twitter / X
+          </a>
+          <a href="#" class="social-link" data-social="instagram" hidden>
+            Instagram
+          </a>
+        </div>
+
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      &copy; <span data-field="name">Nama Anda</span>
+    </footer>
+  </div>
+
+  <script src="js/master.js"></script>
 </body>
 
 </html>
