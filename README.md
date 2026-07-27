@@ -1,16 +1,16 @@
 # EXsipo
 
-**EX**-treme **Si**mple **Po**rtfolio — template portfolio personal yang ringan, data-driven, dan bebas dependensi eksternal.
+**EX**-treme **Si**mple **Po**rtfolio: template portfolio personal berbasis HTML, CSS, dan JavaScript murni.
 
 ## Fitur
 
-- Data dari `data.json` — isi satu file, semua halaman terisi otomatis
+- Data dari `data.json`. Isi satu file, semua halaman terisi otomatis
 - Halaman: Beranda, Proyek, Tentang, Kontak, 404
 - Dark mode dengan desain minimalis
-- Responsif & mobile-friendly
+- Responsif di layar mobile
 - Tombol Cetak CV dengan print stylesheet
 - Open Graph meta tags untuk sharing di sosial media
-- Zero framework, zero build step — langsung buka di browser
+- Tanpa framework dan tanpa build step
 
 ## Cara Pakai
 

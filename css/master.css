@@ -1,7 +1,6 @@
 /*
- * EX-treme Simple Portfolio — Master Stylesheet
- * Aesthetic: Vercel / Linear / Minimalist Craftsmanship
- * Principles: Crisp typography, dark neutral tones, high legibility, zero noise.
+ * EX-treme Simple Portfolio - Master Stylesheet
+ * Tema gelap, tipografi Inter, layout minimalis.
  */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
@@ -293,7 +292,7 @@ body {
 }
 
 /* ─────────────────────────────────────────
-   Home Page — Hero
+   Home Page: Hero
 ───────────────────────────────────────── */
 .hero-headline {
   font-size: clamp(26px, 3.5vw, 36px);
